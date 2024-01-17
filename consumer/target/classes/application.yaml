@@ -1,0 +1,13 @@
+server:
+  port: 8091
+
+dubbo:
+  application:
+    name: consumer
+  protocol:
+    name: dubbo
+    port: 20880
+  registry:
+#    address: zookeeper://127.0.0.1:2181
+    address: nacos://127.0.0.1:8848/?namespace=f3165064-cf64-4e87-ac0a-07440945b6cd
+    group: HN
